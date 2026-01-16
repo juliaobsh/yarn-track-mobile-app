@@ -68,16 +68,20 @@ const TabsLayout = () => {
         <Tabs.Screen
           name="create"
           options={{
-            title: 'Create',
+            title: "Create",
             headerShown: false,
-            tabBarIcon: ({color, focused}) => (
-              <TabIcon 
-                icon={icons.plus}
-                color={color}
-                name="Create"
-                focused={focused}
-              />
-            )
+            tabBarIcon: ({ focused }) => (
+              <View className="items-center justify-center" style={{ marginTop: -18 }}>
+                <View className="w-14 h-14 rounded-full bg-secondary items-center justify-center">
+                  <Image
+                    source={icons.plus}
+                    resizeMode="contain"
+                    className="w-6 h-6"
+                    tintColor={"#161622"}
+                  />
+                </View>
+              </View>
+            ),
           }}
         />
         <Tabs.Screen

@@ -8,11 +8,11 @@ import { images } from '../constants'
 import CustomButton from "../components/CustomButton";
 
 export default function App() {
-
+      
     return (
         <SafeAreaView className="bg-primary h-full">
             <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-                <View className="w-full justify-center items-center min-h-[90vh] px-4">
+                <View className="w-full justify-center items-center min-h-[80vh] px-4">
                     <Image 
                         source={images.logo}
                         className="w-[130px] h-[84px]"
@@ -28,9 +28,9 @@ export default function App() {
                     />*/}
 
                     <View className="relative mt-5">
-                        <Text className="text-3xl text-white font-bold text-center">YarnTrack
-                        {/*<Text className="text-secondary-200">YarnTrack</Text>*/}
-                        </Text>
+                        {/*<Text className="text-3xl text-white font-bold text-center">YarnTrack
+                        <Text className="text-secondary-200">YarnTrack</Text>
+                        </Text> */}
 
                         {/*<Image 
                             source={images.path}
@@ -39,29 +39,29 @@ export default function App() {
                         />*/}
                     </View>
 
-                    <Text className="text-sm font-pregular text-white mt-7 text-center" /*style={{ paddingHorizontal: 13 }}*/>
+                    <Text className="text-xl font-pregular text-white mt-3 text-center" /*style={{ paddingHorizontal: 13 }}*/>
                         All your projects, all in one place
                     </Text>
 
                     <View className="relative z-10 w-full">
                         <CustomButton 
                             title="Continue"
-                            handlePress={() => router.push('/sign-in')}
-                            containerStyles="w-full mt-7"
+                            handlePress={() => router.push('/onboarding')}
+                            containerStyles="w-full mt-4 absolute bottom-[-225px]"
                         />
                     </View>
 
                     <Image
                         source={images.vector1}
                         pointerEvents="none"
-                        className="absolute bottom-[-100px] left-[-50px] w-[599] h-[251px]"
+                        className="absolute bottom-[-135px] left-[-50px] w-[599] h-[251px]"
                         resizeMode="contain"
                     />
 
                     <Image
                         source={images.vector2}
                         pointerEvents="none"
-                        className="absolute bottom-[-90px] left-0 w-[503] h-[203px]"
+                        className="absolute bottom-[-135px] left-0 w-[503] h-[203px]"
                         resizeMode="contain"
                     />
                 </View>
